@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout';
-import ProductItem from '@/components/productItem';
 import Product from '@/models/Product';
 import data from '@/utils/data';
 import db from '@/utils/db';
@@ -7,6 +6,7 @@ import axios from 'axios';
 import { Store } from '@/utils/Store';
 import { useContext } from 'react';
 import { toast } from 'react-toastify';
+import ProductItem from '@/components/ProductItem';
 
 export default function Home({ products }) {
   const { state, dispatch } = useContext(Store);
